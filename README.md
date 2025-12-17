@@ -102,14 +102,4 @@ vault.enc — Encrypted vault file (auto-generated)
 
 salt.bin — Salt for key derivation (auto-generated)
 
-💡 Screenshots
 
-(Optional: Add screenshots of your GUI here)
-
-📌 License
-
-This project is licensed under the MIT License.
-
-If you want, I can also write a GitHub-ready commit structure and push instructions for VSCode, so you can upload this project to GitHub in one go.
-
-Do you want me to do that next?
