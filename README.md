@@ -1,7 +1,6 @@
 Password Manager Project . 
 It is a cyber security project .
 A desktop application built in Python with Tkinter that allows users to securely store, manage, and retrieve passwords. All credentials are encrypted locally using AES (Fernet) with a master password. Features include add, retrieve, delete, search entries, and change master password—all offline and fully secure.
-The Password Manager is a desktop application developed in Python using Tkinter for the graphical interface and the Cryptography library for strong encryption. It provides a secure, offline solution for managing your passwords and sensitive credentials.
 
 Project Overview
 
