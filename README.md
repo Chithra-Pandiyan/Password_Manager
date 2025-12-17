@@ -1,48 +1,115 @@
-Password Manager Project . 
-It is a cyber security project .
-A desktop application built in Python with Tkinter that allows users to securely store, manage, and retrieve passwords. All credentials are encrypted locally using AES (Fernet) with a master password. Features include add, retrieve, delete, search entries, and change master password—all offline and fully secure.
+🗝️ Secure Password Manager
 
-Project Overview
+A simple, secure password manager built with Python and Tkinter. It encrypts your passwords using Fernet symmetric encryption and allows you to safely store, retrieve, search, and copy credentials.
 
-In today’s digital world, securely storing passwords for multiple accounts is critical. This project addresses that need by allowing users to safely store, retrieve, delete, and search their credentials—all in a local, encrypted vault. The application ensures that no sensitive information is stored in plain text, protecting users from potential security breaches.
+✅ Features
 
-Key Features
+First-run default master password: MySecret123
 
-Master Password Authentication: Protects access to the vault. Only users with the correct master password can access stored credentials.
+Add, retrieve, delete website credentials
 
-AES Encryption with Fernet: All passwords and usernames are encrypted using strong symmetric encryption with secure key derivation (PBKDF2 + SHA256).
+Change master password securely
 
-Encrypted Local Storage: Credentials are stored in a local JSON file (vault.enc) that is fully encrypted and safe from unauthorized access.
+Search saved websites
 
-Password Management Functionalities:
-Add new entries (Website, Username, Password)
+Copy username/password to clipboard
 
-Retrieve saved credentials
+Vault encrypted using AES (Fernet)
 
-Delete entries securely
+Salt stored securely for key derivation
 
-Search credentials by website name
+🛠️ Technologies Used
 
-Change Master Password: Safely update the master password without losing existing data.
+Python 3
 
-User-Friendly GUI: Provides an intuitive and clean interface for easy navigation and interaction.
+Tkinter (GUI)
 
-Technologies Used
+Cryptography library (cryptography package)
 
-Python 3 – Core programming language
+JSON (for storing vault data)
 
-Tkinter – GUI development
+💻 Installation
 
-Cryptography Library – AES (Fernet) encryption, PBKDF2 key derivation
+Clone this repository:
 
-JSON – Encrypted local storage
+git clone https://github.com/yourusername/password-manager.git
+cd password-manager
 
-Benefits and Use Cases
 
-Fully offline and secure; no data is transmitted over the internet.
+Install dependencies:
 
-Provides a safe and reliable way to manage personal passwords.
+pip install cryptography
 
-Helps in learning cryptography, secure local storage, and GUI development.
 
-Ideal for personal use or as an educational project in cybersecurity and software engineering.
+Run the application:
+
+python password_manager.py
+
+🚀 Usage
+
+First Run
+
+Default master password is:
+
+MySecret123
+
+
+Vault will be initialized automatically.
+
+Login
+
+Enter your master password to unlock the vault.
+
+Add Entry
+
+Enter Website, Username, and Password, then click Add.
+
+Retrieve Entry
+
+Enter the Website name, then click Retrieve.
+
+Delete Entry
+
+Enter the Website name, then click Delete.
+
+Change Master Password
+
+Click Change Master Password and follow the prompts.
+
+Search
+
+Enter a keyword in the Website field and click Search.
+
+Copy Username / Password
+
+Enter the website and click Copy Username or Copy Password.
+
+🔐 Security Notes
+
+Vault is encrypted with Fernet symmetric encryption.
+
+The master password is never stored in plain text.
+
+Salt is stored in salt.bin for secure key derivation.
+
+Changing the master password re-encrypts the vault with a new key and salt.
+
+📂 Files
+
+password_manager.py — Main application code
+
+vault.enc — Encrypted vault file (auto-generated)
+
+salt.bin — Salt for key derivation (auto-generated)
+
+💡 Screenshots
+
+(Optional: Add screenshots of your GUI here)
+
+📌 License
+
+This project is licensed under the MIT License.
+
+If you want, I can also write a GitHub-ready commit structure and push instructions for VSCode, so you can upload this project to GitHub in one go.
+
+Do you want me to do that next?
